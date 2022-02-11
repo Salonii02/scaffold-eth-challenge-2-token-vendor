@@ -13,46 +13,10 @@ const main = async () => {
 
   //Todo: deploy the vendor
   const vendor = await deploy('Vendor', [yourToken.address]);
-
-  console.log('\n 🏵  Sending all 1000 tokens to the vendor...\n');
-  //Todo: transfer the tokens to the vendor
-  const result = await yourToken.transfer(vendor.address, utils.parseEther('1000'));
-
-  //const stakerContract = await deploy("Staker",[ exampleExternalContract.address ]) // <-- add in constructor args like line 14 ^^^
-
   console.log('\n 🤹  Sending ownership to frontend address...\n');
   //ToDo: change address with your burner wallet address vvvv
   await vendor.transferOwnership('0xafDD110869ee36b7F2Af508ff4cEB2663f068c6A');
 
-  //const secondContract = await deploy("SecondContract")
-
-  // const exampleToken = await deploy("ExampleToken")
-  // const examplePriceOracle = await deploy("ExamplePriceOracle")
-  // const smartContractWallet = await deploy("SmartContractWallet",[exampleToken.address,examplePriceOracle.address])
-
-  /*
-  //If you want to send value to an address from the deployer
-  const deployerWallet = ethers.provider.getSigner()
-  await deployerWallet.sendTransaction({
-    to: "0x34aA3F359A9D614239015126635CE7732c18fDF3",
-    value: ethers.utils.parseEther("0.001")
-  })
-  */
-
-  /*
-  //If you want to send some ETH to a contract on deploy (make your constructor payable!)
-  const yourContract = await deploy("YourContract", [], {
-  value: ethers.utils.parseEther("0.05")
-  });
-  */
-
-  /*
-  //If you want to link a library into your contract:
-  // reference: https://github.com/austintgriffith/scaffold-eth/blob/using-libraries-example/packages/hardhat/scripts/deploy.js#L19
-  const yourContract = await deploy("YourContract", [], {}, {
-   LibraryName: **LibraryAddress**
-  });
-  */
 
   console.log(' 💾  Artifacts (address, abi, and args) saved to: ', chalk.blue('packages/hardhat/artifacts/'), '\n\n');
 };

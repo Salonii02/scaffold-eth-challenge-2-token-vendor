@@ -678,10 +678,3 @@ If everything works as expected, you are ready to make the big jump and deploy e
 
 GitHub Repo for this project: [scaffold-eth-challenge-2-token-vendor](https://github.com/StErMi/scaffold-eth-challenge-2-token-vendor)
 
-
-## Did you like this content? Follow me for more!
-
--   GitHub: [https://github.com/StErMi](https://github.com/StErMi)
--   Twitter: [https://twitter.com/StErMi](https://twitter.com/StErMi)
--   Medium: [https://medium.com/@stermi](https://medium.com/@stermi)
--   Dev.to: [https://dev.to/stermi](https://dev.to/stermi)
